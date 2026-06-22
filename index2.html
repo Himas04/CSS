@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      body {
+        background: #000;
+      }
+      p {
+        color: red;
+        background-color: antiquewhite;
+        text-align: center;
+      }
+      .paragraph {
+        color: chocolate;
+        background: #000;
+        border: 2px solid rgb(187, 21, 21);
+        border-radius: 12px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+      }
+      .paragraph:hover {
+        transform: scale(1.05);
+      }
+
+      #para-1 {
+        color: darkgreen;
+        background-color: wheat;
+      }
+      #para-1:hover {
+        background: #000;
+        color: aqua;
+        box-shadow: 5px 5px 10px rgb(159, 131, 131);
+      }
+      .meoww {
+        color: chartreuse;
+        background: #ca6464;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid gray;
+        cursor: pointer;
+      }
+      .meoww:hover {
+        color: #003924;
+        background-color: #5c459c;
+      }
+      .paraa {
+        color: antiquewhite;
+        background-color: blue;
+      }
+      #para-2 {
+        color: #003924;
+        background: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="paragraph" id="para-1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+      sunt voluptatem nobis ea ut delectus impedit quas natus, quibusdam
+      blanditiis quidem, asperiores, quasi vero voluptates iure? Minus dolor
+      quisquam reprehenderit! Sint nostrum deleniti nam voluptatem laborum
+      reprehenderit tempora aspernatur quibusdam odit architecto facilis,
+      commodi sequi, rerum minus eveniet dolorum ipsa?
+    </p>
+
+    <button style="color: rgb(0, 0, 0)" class="meoww">Read Meow 🐈</button>
+
+    <p class="paraa" id="para-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, recusandae
+      maiores ad error quod, quibusdam aspernatur nihil, provident cumque
+      reiciendis qui aut. Maxime!
+    </p>
+  </body>
+</html>
