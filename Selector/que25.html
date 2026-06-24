@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CSS Combinator Selectors</title>
+
+<style>
+
+
+.container{
+    width: 500px;
+    margin: auto;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+
+
+.container ul li{
+    color: blue;
+}
+
+
+
+.container > h1{
+    color: red;
+}
+
+
+img + p{
+    color: green;
+    font-weight: bold;
+}
+
+
+h2 ~ div{
+    border: 2px solid purple;
+    padding: 8px;
+    margin-top: 8px;
+    transition: 0.3s ease-in-out;
+    width: 300px;
+}
+h2 ~div:hover{
+    transform: scale(1.09);
+    background-color: aquamarine;
+}
+img{
+    width: 200px;
+    border-radius: 25%;
+    transition: 0.5s ease-in-out;
+}
+img:hover{
+    transform: scaleX(1.09);
+    box-shadow: 10px 6px 0 rgb(57, 60, 50);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Mini Webpage</h1>
+
+    <img src="wp11639451.jpg"
+         alt="Sample Image">
+
+    <p>This paragraph is immediately after the image.</p>
+
+    <h2>Student Information</h2>
+
+    <div>Name: John Doe</div>
+
+    <div>Course: Computer Science</div>
+
+    <div>Year: 2nd Year</div>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+</div>
+
+</body>
+</html>

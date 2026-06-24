@@ -1,239 +1,250 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Selectors Assignment</title>
     <style>
-        /* Element Selector - Create h1 and two p tags. Apply blue color to all paragraphs. */
-        p {
-            color: blue;
-        }
+      /* Element Selector - Create h1 and two p tags. Apply blue color to all paragraphs. */
+      p {
+        color: blue;
+      }
 
-        /* Element Selector - Create h2 and p. Apply font size 30px to h2. */
-        h2 {
-            font-size: 30px;
-        }
+      /* Element Selector - Create h2 and p. Apply font size 30px to h2. */
+      h2 {
+        font-size: 30px;
+      }
 
-        /* ID Selector - Create a heading with id='title'. Apply red color and center alignment */
-        #title {
-            color: red;
-            text-align: center;
-        }
+      /* ID Selector - Create a heading with id='title'. Apply red color and center alignment */
+      #title {
+        color: red;
+        text-align: center;
+      }
 
-        /* ID Selector - Create a button with id='submitBtn'. Apply green background and white text. */
-        #submitBtn {
-            background: green;
-            color: white;
-        }
+      /* ID Selector - Create a button with id='submitBtn'. Apply green background and white text. */
+      #submitBtn {
+        background: green;
+        color: white;
+      }
 
-/* Class Selector - Create three paragraphs with class='content'. Apply gray color and font size
+      /* Class Selector - Create three paragraphs with class='content'. Apply gray color and font size
 18px. */
-        .content {
-            color: gray;
-            font-size: 8px;
-        }
-        
-        /* Class Selector - Create two buttons with class='btn'. Apply blue background, white text and
+      .content {
+        color: gray;
+        font-size: 8px;
+      }
+
+      /* Class Selector - Create two buttons with class='btn'. Apply blue background, white text and
 padding. */
-        .btn {
-            background: blue;
-            color: white;
-            padding: 10px;
-        }
+      .btn {
+        background: blue;
+        color: white;
+        padding: 10px;
+      }
 
-        /* Simple Selector - Create heading, paragraph and button. Use Element, Class and ID selectors. */
-        h1 {
-            color: burlywood;
-            text-align: center;
-        }
+      /* Simple Selector - Create heading, paragraph and button. Use Element, Class and ID selectors. */
+      h1 {
+        color: burlywood;
+        text-align: center;
+      }
 
-        .meow {
-            color: blueviolet;
-            background: #392828;
-            border-radius: 5px;
-        }
+      .meow {
+        color: blueviolet;
+        background: #392828;
+        border-radius: 5px;
+      }
 
-        #tom {
-            color: brown;
-            background: burlywood;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+      #tom {
+        color: brown;
+        background: burlywood;
+        border-radius: 5px;
+        cursor: pointer;
+      }
 
-        /* Simple Selector - Create a Student Card using Element, Class and ID selectors */
-        .studentcard h1 {
-            color: white;
-            text-align: center;
-        }
+      /* Simple Selector - Create a Student Card using Element, Class and ID selectors */
+      .studentcard h1 {
+        color: white;
+        text-align: center;
+      }
 
-        .studentcard {
-            width: 400px;
-            margin: 100px auto;
-            padding: 20px;
-            background: #222;
-            border-radius: 15px;
-            box-shadow: 0 0 10px green;
-            color: white;
-        }
+      .studentcard {
+        width: 400px;
+        margin: 100px auto;
+        padding: 20px;
+        background: #222;
+        border-radius: 15px;
+        box-shadow: 0 0 10px green;
+        color: white;
+        transition: 0.3s ease-in-out;
+      }
+      .studentcard:hover {
+        transform: scaleY(1.1);
+      }
 
-        .input {
-            width: 95%;
-            padding: 8px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: none;
-        }
+      .input {
+        width: 95%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: none;
+      }
 
+      #stuBtn {
+        width: 50%;
+        padding: 10px;
+        margin: 2% 25% 0 25%;
+        background-color: purple;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
 
-        #stuBtn {
-            width: 50%;
-            padding: 10px;
-            margin: 2% 25% 0 25%;
-            background-color: purple;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+      #stuBtn:hover {
+        background-color: darkslateblue;
+      }
 
-        #stuBtn:hover {
-            background-color: darkslateblue;
-        }
+      /* Descendant Selector - Apply style only to paragraph inside a div. */
+      div p {
+        color: rgb(214, 222, 214);
+        background: rgb(74, 47, 61);
+      }
 
-        /* Descendant Selector - Apply style only to paragraph inside a div. */
-        div p {
-            color: rgb(214, 222, 214);
-            background: rgb(74, 47, 61);
-        }
+      /* Descendant Selector - Apply style to all elements inside .student. */
+      .student p {
+        color: green;
+        background-color: aliceblue;
+      }
 
-        /* Descendant Selector - Apply style to all elements inside .student. */
-        .student p {
-            color: green;
-            background-color: aliceblue;
-        }
+      .student h1 {
+        color: blue;
+        background-color: aliceblue;
+      }
 
-        .student h1 {
-            color: blue;
-            background-color: aliceblue;
-        }
+      .student button {
+        background-color: purple;
+        color: white;
+        padding: 10px;
+        border: none;
+      }
 
-        .student button {
-            background-color: purple;
-            color: white;
-            padding: 10px;
-            border: none;
-        }
+      /* Descendant Selector - Apply style to all paragraphs inside .course. */
+      .course p {
+        color: yellowgreen;
+        background-color: aqua;
+        border-radius: 5px;
+        transition: 0.4s ease-in;
+      }
 
-        /* Descendant Selector - Apply style to all paragraphs inside .course. */
-        .course p {
-            color: yellowgreen;
-            background-color: aqua;
-            border-radius: 5px;
-            transition: 0.4s ease-in;
-        }
+      .course p:hover {
+        transform: scale(1.046);
+      }
 
-        .course p:hover {
-            transform: scale(1.046);
-        }
+      /*  <!-- Descendant Selector - Apply style to nested paragraph inside .container. --> */
+      .container2 {
+        color: blueviolet;
+        background: #000;
+      }
 
-        /*  <!-- Descendant Selector - Apply style to nested paragraph inside .container. --> */
-        .container2 {
-            color: blueviolet;
-            background: #000;
-        }
+      .insPro h1,
+      h2 {
+        color: burlywood;
+        text-align: center;
+      }
 
-        .insPro h1,
-        h2 {
-            color: burlywood;
-            text-align: center;
-        }
+      /* Institute Profile - Use ID, Class and Element selectors. */
+      .insPro {
+        width: 400px;
+        margin: 100px auto;
+        padding: 20px;
+        background: #222;
+        color: white;
+        border-radius: 15px;
+        box-shadow: 0 0 10px green;
+        transition: 0.32s ease-in-out;
+      }
+      .insPro:hover {
+        transform: scaleX(1.09);
+      }
 
-        /* Institute Profile - Use ID, Class and Element selectors. */
-        .insPro {
-            width: 400px;
-            margin: 100px auto;
-            padding: 20px;
-            background: #222;
-            color: white;
-            border-radius: 15px;
-            box-shadow: 0 0 10px green;
-        }
+      .info {
+        margin: 10px 0;
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 10px;
+        transition: 0.3s ease-out;
+      }
 
-        .info {
-            margin: 10px 0;
-            font-size: 18px;
-            border-radius: 5px;
-            padding: 10px;
-            transition: 0.3s ease-out;
-        }
-        .info:hover{
-            transform: scaleX(1.09);
-        }
+      .info:hover {
+        transform: scaleX(1.09);
+      }
 
-        #btn {
-            width: 40%;
-            padding: 10px;
-            background-color: purple;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 2% 25% 0 25%;
-        }
+      #btn {
+        width: 40%;
+        padding: 10px;
+        background-color: purple;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 2% 25% 0 25%;
+      }
 
-        #btn:hover {
-            background-color: darkslateblue;
-        }
+      #btn:hover {
+        background-color: darkslateblue;
+      }
 
-        /* Student Result Card - Use Class, ID and Element selectors. */
-        .result h1 {
-            color: aqua;
-        }
+      /* Student Result Card - Use Class, ID and Element selectors. */
+      .result h1 {
+        color: aqua;
+      }
 
-        .result {
-            width: 350px;
-            margin: 100px auto;
-            padding: 20px;
-            background: #1f1f1f;
-            color: white;
-            border-radius: 15px;
-            box-shadow: 0 0 10px blue;
-        }
+      .result {
+        width: 350px;
+        margin: 100px auto;
+        padding: 20px;
+        background: #1f1f1f;
+        color: white;
+        border-radius: 15px;
+        box-shadow: 0 0 10px blue;
+        transition: 0.4s ease-in-out;
+      }
+      .result:hover {
+        transform: scale(1.09);
+      }
 
+      #para {
+        font-size: 22px;
+        font-weight: bold;
+        color: limegreen;
+        text-align: center;
+        margin-top: 15px;
+        border-radius: 5px;
+        transition: 0.3s ease-out;
+      }
 
+      #para:hover {
+        transform: scaleY(1.45);
+      }
 
-        #para {
-            font-size: 22px;
-            font-weight: bold;
-            color: limegreen;
-            text-align: center;
-            margin-top: 15px;
-            border-radius: 5px;
-            transition: 0.3s ease-out;
-        }
-        #para:hover{
-            transform: scaleY(1.45);
-        }
+      #btn2 {
+        width: 40%;
+        margin: 0% 30% 0% 25%;
+        padding: 10px;
+        background-color: purple;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
 
-        #btn2 {
-            width: 100%;
-            padding: 10px;
-            background-color: purple;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        #btn:hover {
-            background-color: darkslateblue;
-        }
+      #btn2:hover {
+        background-color: rgb(138, 126, 216);
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Element Selector - Create h1 and two p tags. Apply blue color to all paragraphs -->
     <h1>This is Heading</h1>
     <p>Lorem ipsum dolor sit amet.</p>
@@ -250,9 +261,17 @@ padding. */
     <button id="submitBtn">Submit</button>
 
     <!-- Class Selector - Create three paragraphs with class='content'. Apply gray color and font size 18px. -->
-    <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, quasi!</p>
-    <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, magnam praesentium.</p>
-    <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, magnam praesentium.</p>
+    <p class="content">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, quasi!
+    </p>
+    <p class="content">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis,
+      magnam praesentium.
+    </p>
+    <p class="content">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis,
+      magnam praesentium.
+    </p>
 
     <!-- Class Selector - Create two buttons with class='btn'. Apply blue background, white text and padding. -->
     <button class="btn">Submit</button>
@@ -260,95 +279,105 @@ padding. */
 
     <!-- Simple Selector - Create heading, paragraph and button. Use Element, Class and ID selectors. -->
     <div>
-        <h1>This is MEOW🐈</h1>
-        <p class="meow">Hello I am TOM.I am a cat.</p>
-        <button id="tom">Click To see TOM</button>
+      <h1>This is MEOW🐈</h1>
+      <p class="meow">Hello I am TOM.I am a cat.</p>
+      <button id="tom">Click To see TOM</button>
     </div>
 
     <!-- Simple Selector - Create a Student Card using Element, Class and ID selectors. -->
     <div class="studentcard">
-        <h1>Student Detsils</h1>
-        <label>Name:<input type="text" class="input" placeholder="Enter a name"></label>
-        <br>
-        <label>Age: <input type="number" class="input" placeholder="Enter your age"></label>
-        <br>
-        <button id="stuBtn">Submit</button>
+      <h1>Student Detsils</h1>
+      <label
+        >Name:<input type="text" class="input" placeholder="Enter a name"
+      /></label>
+      <br />
+      <label
+        >Age: <input type="number" class="input" placeholder="Enter your age"
+      /></label>
+      <br />
+      <button id="stuBtn">Submit</button>
     </div>
 
     <!-- Descendant Selector - Apply style only to paragraph inside a div. -->
 
     <div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut tempore deserunt sed ipsa esse ab vitae
-            perspiciatis sit quisquam ratione? Nihil, provident quam earum tenetur eligendi omnis voluptas aut?</p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut tempore
+        deserunt sed ipsa esse ab vitae perspiciatis sit quisquam ratione?
+        Nihil, provident quam earum tenetur eligendi omnis voluptas aut?
+      </p>
     </div>
 
     <!-- Simple Selector - Create a Student Card using Element, Class and ID selectors. -->
     <div class="student">
+      <h1>Student Details</h1>
 
-        <h1>Student Details</h1>
+      <p>Name: Himas</p>
 
-        <p>Name: Himas</p>
+      <div>
+        <p>Age: 22</p>
+      </div>
 
-        <div>
-            <p>Age: 22</p>
-        </div>
-
-        <button>Submit</button>
-
+      <button>Submit</button>
     </div>
 
     <!-- Descendant Selector - Apply style to all paragraphs inside .course. -->
     <div class="course">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repudiandae natus atque fugiat soluta unde,
-            error sit deserunt, obcaecati dolores aspernatur dicta itaque adipisci eum magni, temporibus expedita quasi
-            eaque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eligendi?</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repudiandae
+        natus atque fugiat soluta unde, error sit deserunt, obcaecati dolores
+        aspernatur dicta itaque adipisci eum magni, temporibus expedita quasi
+        eaque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eligendi?
+      </p>
     </div>
 
     <!-- Descendant Selector - Apply style to nested paragraph inside .container. -->
     <div class="container">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, laborum. </p>
-        <p class="container2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam omnis architecto,
-            ut suscipit fugiat?</p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, laborum.
+      </p>
+      <p class="container2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam
+        omnis architecto, ut suscipit fugiat?
+      </p>
     </div>
 
     <!-- Institute Profile - Use ID, Class and Element selectors.-->
     <div class="insPro">
+      <h1>NSBM Institute</h1>
 
-        <h1>NSBM Institute</h1>
+      <h2>Student Profile</h2>
 
-        <h2>Student Profile</h2>
+      <p class="info">Name: Himas Mohamed</p>
 
-        <p class="info">Name: Himas Mohamed</p>
+      <p class="info">Course: Computer Science</p>
 
-        <p class="info">Course: Computer Science</p>
+      <p class="info">Batch: 2024</p>
 
-        <p class="info">Batch: 2024</p>
-
-        <button id="btn">View More</button>
+      <button id="btn">View More</button>
     </div>
 
     <!-- Student Result Card - Use Class, ID and Element selectors. -->
     <div class="result">
-        <h1>Student Result Card</h1>
-        <h2>Results</h2>
-        
-        <p class="info">Name: Himas Mohamed</p>
+      <h1>Student Result Card</h1>
+      <h2>Results</h2>
 
-        <p class="info">Course: Computer Science</p>
+      <p class="info">Name: Himas Mohamed</p>
 
-        <p class="info">Batch: 2024</p>
+      <p class="info">Course: Computer Science</p>
 
-        <p class="info">Marks: 85</p>
+      <p class="info">Batch: 2024</p>
 
-        <p id="para">Result: PASS</p>
+      <p class="info">Marks: 85</p>
 
-        <button id="btn2">View Details</button>
+      <p id="para">Result: PASS</p>
 
+      <button id="btn2">View Details</button>
     </div>
 
     <!-- Complete Selector Practice - Demonstrate Element, Class, ID and Descendant selectors -->
-
-</body>
-
+  </body>
 </html>
