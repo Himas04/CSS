@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form{
+            background-color: white;
+            padding: 20px;
+            width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+
+        
+        input[required]{
+            border: 2px solid red;
+            background-color: #fff8dc;
+        }
+
+        
+        input[readonly]{
+            background-color: #e0e0e0;
+            color: blue;
+            font-weight: bold;
+        }
+
+        
+        input[type="email"]{
+            border: 2px solid green;
+            background-color: #f0fff0;
+        }
+
+        
+        input[type="submit"]{
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover{
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Employee Form</h2>
+
+        <input type="text" value="EMP001" readonly>
+
+        <input type="text" placeholder="Employee Name" required>
+
+        <input type="email" placeholder="Employee Email" required>
+
+        <input type="tel" placeholder="Phone Number" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

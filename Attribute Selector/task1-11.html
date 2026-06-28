@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Attribute Selector</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Create inputs and style all elements having a type attribute using [type]. -->
+    <input type="text" placeholder="Enter Name" />
+    <input type="password" placeholder="Enter Number" />
+    <input type="email" placeholder="Enter your email" />
+    <input type="submit" /><br />
+
+    <!--Apply styles to links containing a title attribute using [title].  -->
+    <a href="https://www.google.com" title="Go to Google">Google</a><br /><br />
+
+    <a href="https://www.youtube.com">YouTube</a><br /><br />
+
+    <a href="https://www.github.com" title="Visit GitHub">GitHub</a><br /><br />
+
+    <!-- Highlight readonly input fields using [readonly]. -->
+     <input type="text" value="Himas Moh" readonly><br>
+
+     <!-- Style required fields using [required]. -->
+      <input type="password" placeholder="Enter your a password" required><br>
+      <!-- Style files ending with .pdf using [href$='.pdf']. -->
+       <a href="CSS_Attribute_Selector_20_Tasks.pdf">CSS Task.</a>
+       <br>
+       <!-- Style images containing 'photo' in src using [src*='photo']. -->
+        <img src="photo.jpg" alt="">
+        <img src="photo1.jpg" alt="">
+        <br>
+        <!-- Highlight elements containing class active using [class~='active']. -->
+         <div class="active">
+            <h1>This is a Cat 🐈.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatum itaque numquam necessitatibus est, minima sit incidunt quae repudiandae odit.</p>
+         </div>
+         <h2 class="text active">HIIIIIII.....</h2>
+         <button class="btn active">Click ME!!</button>
+         <br>
+
+         <!-- Style language values en and en-US using [lang|='en']. -->
+         <p lang="en">Hello! Welcome.</p>
+
+    <p lang="en-US">Hello! How are you?</p>
+
+    <p lang="en-GB">Hello! Cheers!</p>
+</body>
+
+</html>

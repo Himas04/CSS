@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+form{
+    background: white;
+    padding: 20px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+h2{
+    text-align: center;
+}
+
+
+input[required]{
+    border: 2px solid red;
+    background-color: #fff8dc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="number"]{
+    border: 2px solid red;
+    background-color: #fff8dc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+input[type="submit"]{
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    background-color: darkgreen;
+}
+input:hover{
+    background-color: yellow;
+    box-shadow: 1px 1px 10px lime;
+}
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Registration Form</h2>
+
+        <input type="text" placeholder="Enter Full Name" required><br><br>
+
+        <input type="email" placeholder="Enter Email" required><br><br>
+
+        <input type="password" placeholder="Enter Password" required><br><br>
+
+        <input type="number" placeholder="Enter Age"><br><br>
+
+        <input type="tel" placeholder="Enter Phone Number" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>

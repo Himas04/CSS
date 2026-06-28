@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 3px 2px 9px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+
+        
+        input[readonly]{
+            background-color: #e6e6e6;
+            border: 2px solid blue;
+            color: blue;
+            font-weight: bold;
+            cursor: not-allowed;
+        }
+
+        input[type="submit"]{
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover{
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Student Form</h2>
+
+        <input type="text" value="ST2026001" readonly>
+
+        <input type="text" placeholder="Enter Student Name">
+
+        <input type="email" placeholder="Enter Email">
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
