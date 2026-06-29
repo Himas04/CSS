@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        padding: 10px;
+        margin: 0;
+        background: gold;
+        box-sizing: border-box;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* key fix */
+        background: #000;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        margin: 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+      }
+
+      h1::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: red;
+        position: absolute;
+        left: 0;
+        bottom: 1%;
+      }
+
+      nav a {
+        border: none;
+        border-radius: 2px;
+        background-color: antiquewhite;
+        padding: 5px;
+        color: black;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        display: inline-block;
+        justify-content: flex-end;
+      }
+
+      nav a:hover {
+        background-color: rgb(78, 195, 149);
+        color: #8f0505;
+        transform: scale(0.8);
+        padding: 8px;
+      }
+
+      nav a:focus {
+        color: #3c3232;
+        background-color: violet;
+        box-shadow: 1px 2px 3px white;
+        padding: 7px;
+      }
+      .form {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .form form {
+        height: 45vh;
+        padding: 10px;
+        width: 300px;
+        margin-top: 20px;
+        background-color: #3c3232;
+        border-radius: 10px;
+      }
+      form h2 {
+        text-align: center;
+        color: blanchedalmond;
+        text-decoration: none;
+      }
+      input {
+        display: flex;
+        justify-content: space-around;
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 18%;
+        background-color: wheat;
+        border: none;
+        box-shadow: 2px 2px 10px rgb(123, 89, 68);
+        transition: 0.4s ease-in-out;
+      }
+      input:hover {
+        transform: scale(1.09);
+      }
+      input:focus {
+        background: #000;
+        padding: 13px;
+        border: none;
+        color: aliceblue;
+      }
+      #eml:valid {
+        background-color: rgb(180, 229, 102);
+        color: rgb(54, 48, 59);
+      }
+      #eml:invalid {
+        background-color: rgb(227, 175, 175);
+        color: rgb(255, 0, 0);
+      }
+      button {
+        padding: 10px;
+        margin-left: 35%;
+        border-radius: 5px;
+        width: 30%;
+        background-color: #d685aa;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: chocolate;
+        color: #3c3232;
+      }
+      button:focus {
+        color: tomato;
+        padding: 15px;
+      }
+
+      .table{
+        margin-top: 20px;
+      }
+h2{
+    text-align: center;
+    color: #1a2c40;
+}
+        table{
+            width:90%;
+            margin:auto;
+            border-collapse:collapse;
+            background:white;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        th, td{
+            border:1px solid #ccc;
+            padding:12px;
+            text-align:center;
+           
+        }
+
+        th{
+            background:#007BFF;
+            color:white;
+        }
+
+        tr:nth-child(even){
+            background:#f2f2f2;
+            color: #8f0505;
+
+        }
+
+        tr:hover{
+            background:#d6f5ff;
+        }
+
+        .pass{
+            color:green;
+            font-weight:bold;
+        }
+
+        .fail{
+            color:red;
+            font-weight:bold;
+        }
+        /* Blog Section */
+
+.blog{
+    margin:40px auto;
+    width:90%;
+}
+
+.blog h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.blog-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.blog-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.blog-content{
+    padding:20px;
+}
+
+.blog-content h3{
+    color:#1a2c40;
+    margin-bottom:10px;
+}
+
+.date{
+    color:gray;
+    margin-bottom:15px;
+    font-style:italic;
+}
+
+.blog-content p{
+    line-height:1.7;
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+.blog-content button{
+    margin:0;
+    width:150px;
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div>
+      <nav>
+        <h1>HMS College</h1>
+        <ul>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Courses</a>
+          <a href="#">Login</a>
+        </ul>
+      </nav>
+    </div>
+    <!-- Registration Form -->
+    <div class="form">
+      <form>
+        <h2>Student Registration Form</h2>
+        <br />
+        <input type="name" placeholder="Enter Your Name.." required /><br />
+        <input
+          id="eml"
+          type="email"
+          placeholder="Enter Your Email.."
+          required
+        /><br />
+        <input type="tel" placeholder="Enter Your Contact.." required /><br />
+        <input
+          id="pass"
+          type="password"
+          placeholder="Enter Your Password..."
+          minlength="8"
+        /><br />
+        <button>Submit</button>
+      </form>
+    </div>
+    <!-- Student Result Table -->
+    <div class="table">
+        <h2>Students Results Table</h2>
+      <table>
+        <tr>
+          <th rowspan="2">Name</th>
+          <th rowspan="2">ID</th>
+          <th colspan="5">Subjects</th>
+          
+        </tr>
+        <tr>
+            <th>HTML</th>
+          <th>CSS</th>
+          <th>JavaScript</th>
+          <th>Total</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>101</td>
+          <td>John</td>
+          <td>85</td>
+          <td>90</td>
+          <td>80</td>
+          <td>255</td>
+          <td class="pass">Pass</td>
+        </tr>
+
+        <tr>
+          <td>102</td>
+          <td>Sara</td>
+          <td>78</td>
+          <td>69</td>
+          <td>74</td>
+          <td>221</td>
+          <td class="pass">Pass</td>
+        </tr>
+
+        <tr>
+          <td>103</td>
+          <td>David</td>
+          <td>45</td>
+          <td>38</td>
+          <td>50</td>
+          <td>133</td>
+          <td class="fail">Fail</td>
+        </tr>
+
+        <tr>
+          <td>104</td>
+          <td>Emma</td>
+          <td>92</td>
+          <td>95</td>
+          <td>88</td>
+          <td>275</td>
+          <td class="pass">Pass</td>
+        </tr>
+      </table>
+    </div>
+    <!-- Blog Section -->
+<div class="blog">
+
+    <h2>Latest College News</h2>
+
+    <div class="blog-card">
+
+        <img src="https://picsum.photos/800/300?random=1" alt="College Event">
+
+        <div class="blog-content">
+
+            <h3>Annual Technology Exhibition 2026</h3>
+
+            <p class="date">
+                Published on June 29, 2026
+            </p>
+
+            <p>
+                HMS College successfully conducted its Annual Technology
+                Exhibition where students showcased innovative projects in
+                Artificial Intelligence, Cloud Computing, Web Development,
+                Robotics, and Mobile Application Development. Hundreds of
+                visitors participated in the event and appreciated the students'
+                creativity and technical skills.
+            </p>
+
+            <button>Read More</button>
+
+        </div>
+
+    </div>
+
+</div>
+  </body>
+</html>

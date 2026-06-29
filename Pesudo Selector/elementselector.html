@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo Elements Demo</title>
+
+<style>
+h1::before {
+    content: "※ ";
+    color: red;
+    font-weight: bold;
+}
+
+h3::after {
+    content: " ✅";
+    color: green;
+    font-size: 18px;
+}
+
+h2::first-letter {
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+p::first-line {
+    color: yellow;
+    background-color: black;
+}
+
+h1::selection {
+    color: white;
+    background-color: teal;
+}
+
+::selection {
+    background: orange;
+    color: black;
+}
+.para::before {
+    content: "“";
+    font-size: 30px;
+    color: rgb(88, 64, 64);
+}
+
+.para::after {
+    content: "”";
+    font-size: 30px;
+    color: rgb(249, 0, 0);
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+
+}
+
+
+nav a::before {
+    content: "➤ ";
+    color: red;
+    font-weight: bold;
+}
+label.required::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+.product::after {
+    content: " NEW";
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    margin-left: 8px;
+    border-radius: 4px;
+}
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: red;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+p::first-letter{
+    font-weight: bold;
+    font-size: 50px;
+    color: red;
+}
+.para::first-line{
+    font-weight: bold;
+    background-color: aliceblue;
+    color: black;
+    font-size: 20px;
+}
+.animal li::before{
+    content: "🤡";
+}
+.web li::before {
+    content: "1. ";
+    font-weight: bold;
+    color: red;
+}
+.info {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.info::after {
+    content: "ℹ️";
+    margin-left: 6px;
+}
+
+
+.info::before {
+    content: "This is a tooltip message";
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+
+.info:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+.quote {
+    position: relative;
+    font-size: 20px;
+    font-style: italic;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+.quote::before {
+    content: "“";
+    font-size: 50px;
+    color: gray;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+.quote::after {
+    content: "”";
+    font-size: 50px;
+    color: gray;
+}
+.timeline {
+    list-style: none;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+}
+
+.timeline li {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.timeline li::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: rgb(159, 1, 1);
+    border-radius: 100%;
+    position: absolute;
+    left: -7px;
+    top: 5px;
+}
+.card {
+    position: relative;
+    padding: 20px;
+    background: #f5f5f5;
+    width: 200px;
+}
+
+.card::before {
+    content: "FEATURED";
+    position: absolute;
+    top: 10px;
+    left: -55px;
+    background: red;
+    color: white;
+    padding: 5px 40px;
+    transform: rotate(-45deg);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<h1>Hello This is Meow</h1>
+<h3>Task Completed</h3>
+<h2>Cat Page..</h2>
+
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam perspiciatis iusto animi reprehenderit suscipit provident, dolor quam unde?
+</p>
+
+<p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur mollitia ab qui obcaecati aspernatur delectus quibusdam quidem sed expedita. Et, a sunt. Nisi iure quidem incidunt commodi possimus.</p>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+
+<form>
+    <label class="required">Name</label>
+    <input type="text"><br><br>
+
+    <label class="required">Email</label>
+    <input type="email"><br><br>
+
+    <label>Password</label>
+    <input type="password">
+</form>
+<br>
+<div class="product">iPhone 15</div>
+<div class="product">Samsung Galaxy S24</div>
+<div class="product">MacBook Air M3</div>
+
+<ul class="animal">
+    <li>Cat</li>
+    <li>Dog</li>
+</ul>
+
+<ul class="web">
+    <li>HTML Basics</li>
+    <li>CSS Styling</li>
+    <li>JavaScript Logic</li>
+</ul>
+
+<span class="info">Hover ME!!</span>
+
+<p class="quote">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, exercitationem?</p>
+
+<ul class="timeline">
+  <li>Start Project</li>
+  <li>Design UI</li>
+  <li>Finish App</li>
+</ul>
+
+<div class="card">Premium Product</div>
+</body>
+</html>

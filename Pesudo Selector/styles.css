@@ -1,0 +1,112 @@
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+a{
+    padding: 5px;
+    border-radius: 4px;
+}
+ .todoo:hover {
+    color: red;
+}
+
+button:active {
+    background: green;
+    color: antiquewhite;
+    padding: 3px;
+    margin: 5px;
+}
+
+div input:focus {
+    color: antiquewhite;
+    background: #000;
+    padding: 5px;
+    margin: 6px;
+}
+  a:visited{
+    color: rgb(142, 142, 60);
+    background-color: brown;
+}
+ a:link{
+    color: violet;
+    background: thistle;
+    border: 1px solid black;
+}
+#name:optional{
+    border: 3px solid rgb(115, 75, 42);
+    background-color: aqua;
+    border-radius: 3px;
+    padding: 2px;
+    color: #000;
+}
+#eml:valid {
+    border: 2px solid green;
+    background-color: #00eb00;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+#eml:invalid {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+    color: red;
+}
+li:first-child{
+    color: rgb(171, 74, 74);
+}
+li:last-child{
+    color: yellow;
+    background-color: rgb(11, 11, 10);
+}
+li:nth-child(even){
+    background-color: blueviolet;
+    padding: 2px;
+}
+li:nth-child(odd){
+    background-color: teal;
+    margin: 2px;
+}
+.para p:nth-of-type(3){
+    color: red;
+    font-weight: bolder;
+    
+}
+
+
+.test p:only-child {
+    background: green;
+    color: white;
+    font-size: 30px;
+}
+div:empty {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    border: 2px dashed black;
+}
+#check:checked{
+    accent-color: rgb(0, 254, 0);
+}
+.msg {
+    display: none;
+    margin: 20px;
+}
+
+.card:hover .msg {
+    display: block;
+    margin: 20px;
+}
+nav a {
+    padding: 10px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: red;
+}
+
+nav a.active {
+    background: blue;
+    color: white;
+    border-radius: 5px;
+}
