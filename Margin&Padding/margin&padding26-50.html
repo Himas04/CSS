@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>margin&padding</title>
+    <style>
+      * {
+        margin: 10px;
+      }
+      .box1 {
+        margin-top: 20px 30px 40px;
+        background: #785d5d;
+        padding: 20px 30px 40px;
+      }
+      .box2 {
+        margin: 25px 30px;
+        background-color: aqua;
+        padding: 25px 30px;
+      }
+      .box3 {
+        margin: 30px 20px;
+        background-color: yellowgreen;
+        padding: 10px 20px 30px;
+      }
+      .box4 {
+        margin: 10px 20px 30px 40px;
+        background: #a01b1b;
+        padding: 10px 20px 30px 40px;
+      }
+      .box5 {
+        margin: auto;
+        background-color: violet;
+        width: 100px;
+        padding: 10px;
+      }
+      .maincard {
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+      }
+      .maincard .card {
+        margin: 10px;
+        border: 2px solid black;
+        border-radius: 25%;
+        padding: 5px;
+      }
+      button {
+        margin: 20px;
+        padding: 5px;
+      }
+      button:hover {
+        padding: 20px;
+      }
+      img {
+        margin: 25px;
+        border-radius: 50%;
+        border: 3px solid red;
+        transition: 0.3s ease-in-out;
+      }
+      nav a {
+        margin: 20px;
+        padding: 10px;
+        background-color: aqua;
+      }
+      .para p {
+        margin: 20px;
+      }
+      .para h1 {
+        margin: 20px 40px;
+      }
+      .box6 {
+        margin: 20px;
+        padding: 20px;
+        color: #785d5d;
+        background-color: aquamarine;
+      }
+      .profilecard {
+        width: 300px;
+        margin: auto;
+        background: #b98e8e;
+        border-radius: 10%;
+        padding: 30px;
+        text-align: center;
+        font-family:
+          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-style: italic;
+      }
+      .profilecard h1 {
+        color: #a01b1b;
+        padding-bottom: 10px;
+        font-size: 60px;
+      }
+      .profilecard p {
+        background: #df7272;
+        border-radius: 50%;
+        color: #acb359;
+      }
+      img:hover {
+        padding: 10px;
+        background-color: #acb359;
+        transform: scale(1.09);
+      }
+      .login {
+        width: 300px;
+        margin: 50px auto;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .login button {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .productcard {
+        width: 300px;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px; /* Padding for all content */
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .productcard img {
+        width: 70%;
+        border-radius: 8px;
+      }
+
+      .productcard h2 {
+        margin: 15px 0 10px;
+      }
+
+      .productcard p {
+        margin-bottom: 15px;
+        color: #555;
+      }
+
+      .productcard button {
+        padding: 10px 20px;
+        background: royalblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .productcard button:hover {
+        background: darkblue;
+      }
+
+      /* Class Selector */
+      .card {
+        width: 300px;
+        border: 2px solid #333;
+        border-radius: 10px;
+        padding: 20px; /* Padding inside the card */
+        margin: 50px auto; /* Margin outside the card */
+        text-align: center;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+
+      /* ID Selector */
+      #studentName {
+        color: darkgreen;
+        font-size: 24px;
+      }
+
+      .stucard p {
+        margin: 8px 0;
+      }
+
+      .stucard img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      .menu {
+        width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background: white;
+        border: 2px solid #333;
+        border-radius: 10px;
+      }
+
+      .menu h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .menu ul li {
+        list-style: none;
+        padding: 12px;
+        margin: 10px 0;
+        background-color: #e8e8e8;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .menu ul li:hover {
+        background-color: orange;
+        color: white;
+        transform: scale(1.03);
+      }
+      .dashboard h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #007bff;
+      }
+
+      .dashboard div {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .dashcard {
+        width: 220px;
+        background: white;
+        border: 2px solid #333;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        cursor: pointer;
+        background-color: #acb359;
+      }
+
+      .dashcard:hover {
+        background-color: #007bff;
+        color: white;
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+
+      .dashcard h2 {
+        margin-bottom: 10px;
+      }
+
+      .dashcard p {
+        margin-top: 10px;
+      }
+      .container1 {
+        width: 350px;
+        margin: 50px auto;
+        padding: 20px;
+        background: rgb(255, 255, 255);
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #999;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input:focus {
+        border: 2px solid blue;
+        outline: none;
+        background-color: #97bbdb;
+      }
+
+      input[type="submit"]:hover {
+        background-color: darkgreen;
+      }
+
+     
+      .studcard {
+        width: 350px;
+        background: #fff;
+        border: 2px solid #333;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+     
+      .studcard > img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      
+      #studentName {
+        color: navy;
+        margin-bottom: 10px;
+      }
+
+      .info p {
+        padding: 8px;
+        margin: 5px 0;
+        border-bottom: 1px solid #ddd;
+      }
+
+     
+      input[type="button"] {
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: none;
+        background: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+     
+      input[type="button"]:hover {
+        background: #0056b3;
+      }
+
+      
+      .info p:first-child {
+        color: green;
+        font-weight: bold;
+      }
+                                     
+      .info p:nth-child(2) {
+        color: crimson;
+      }
+
+      .studcard h2 {
+        margin-bottom: 10px;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <h1>Welcome to cat page.</h1>
+    </div>
+
+    <div class="box2">
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+
+    <div class="box3">
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+
+    <div class="box4">
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+
+    <div class="box5">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+        facilis, fuga beatae sunt dolores id praesentium molestias quos laborum
+        nulla!
+      </p>
+    </div>
+
+    <div class="maincard">
+      <div class="card">
+        <p>Name:Himas</p>
+        <p>Age:23</p>
+      </div>
+      <div class="card">
+        <p>Name:Jhon</p>
+        <p>Age:23</p>
+      </div>
+    </div>
+
+    <div>
+      <button>CLick ME!</button>
+      <button>See News</button>
+      <button>Add To Cart</button>
+      <button>Quoto</button>
+      <button>Read ME!</button>
+    </div>
+
+    <img src="Stu.jpg" alt="student" />
+    <img src="STU2.jpg" alt="student" />
+    <img src="teacher.jpg" alt="teacher" />
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Menu</a>
+      <a href="#">LogIN</a>
+    </nav>
+
+    <div class="para">
+      <h1>This is paragraph.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+        officia saepe reiciendis!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+        officia saepe reiciendis!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+        officia saepe reiciendis!
+      </p>
+    </div>
+
+    <div class="box6">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        unde?
+      </p>
+    </div>
+
+    <div class="profilecard">
+      <h1>Profile Card</h1>
+      <img src="Stu.jpg" alt="student" />
+      <p>Name:Himas</p>
+      <p>Age:23</p>
+      <p>Course:Computer Science</p>
+    </div>
+
+    <div class="login">
+      <h2>Login</h2>
+
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+
+      <button>Login</button>
+    </div>
+
+    <div class="productcard">
+      <img
+        src="batman-sign-black-background-dc-superheroes-amoled-5k-8k-10k-3840x2160-4409.jpg"
+        alt="Product Image"
+      />
+      <h2>Wireless Headphones</h2>
+      <p>Price: 3499Rs.</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="stucard">
+      <img src="STU2.jpg" alt="Student Photo" />
+
+      <h2 id="studentName">John Doe</h2>
+
+      <p><strong>Course:</strong> Computer Science</p>
+      <p><strong>Age:</strong> 21</p>
+      <p><strong>University:</strong> NSBM</p>
+    </div>
+
+    <div class="menu">
+      <h2>🍽 Restaurant Menu</h2>
+
+      <ul>
+        <li>Pizza - 1200Rs</li>
+        <li>Burger - 800Rs</li>
+        <li>Fried Rice - 1000Rs</li>
+        <li>Pasta - 1100Rs</li>
+        <li>Ice Cream - 50Rs</li>
+      </ul>
+    </div>
+
+    <div class="dashboard">
+      <h1>Dashboard</h1>
+
+      <div>
+        <div class="dashcard">
+          <h2>Users</h2>
+          <p>1,250 Active Users</p>
+        </div>
+
+        <div class="dashcard">
+          <h2>Orders</h2>
+          <p>350 New Orders</p>
+        </div>
+
+        <div class="dashcard">
+          <h2>Revenue</h2>
+          <p>$15,800 This Month</p>
+        </div>
+
+        <div class="dashcard">
+          <h2>Messages</h2>
+          <p>48 Unread Messages</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container1">
+      <h2>Registration Form</h2>
+
+      <form>
+        <input type="text" placeholder="Enter Name" />
+        <input type="email" placeholder="Enter Email" />
+        <input type="password" placeholder="Enter Password" />
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+
+    <!-- Mini Project: Build a Student Information Card using at least 8 CSS selectors, proper margin,
+padding, and three pseudo selectors. -->
+    <div class="studcard">
+      <img src="Stu.jpg" alt="Student" />
+
+      <h2 id="studentName">John Doe</h2>
+
+      <div class="info">
+        <p>Course: Computer Science</p>
+        <p>Age: 21</p>
+        <p>University: NSBM Green University</p>
+        <p>Email: john@example.com</p>
+      </div>
+
+      <input type="button" value="View Profile" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskt</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+
+        h1,
+        p,
+        button {
+            color: blue;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .para {
+            color: yellow;
+            background-color: black;
+            padding: 10px;
+            margin: 5px 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #head,
+        #cat {
+            margin: 10px 20px;
+            padding: 5px 10px 6px;
+            color: antiquewhite;
+            background-color: rgb(146, 0, 0);
+            border: 2px solid rgb(190, 125, 4);
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: tomato;
+            background-color: wheat;
+            width: 100px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 15px;
+        }
+
+        input {
+            margin: 10px;
+            display: flex;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: rgb(46, 52, 58);
+        }
+
+        input[type="password"] {
+            color: red;
+            background-color: antiquewhite;
+        }
+
+        input[type="password"]:focus {
+            padding: 20px;
+        }
+
+        a[target="_blank"] {
+            color: white;
+            background-color: blue;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        img[alt="student"] {
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 5px black;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            padding: 15px;
+            background-color: yellow;
+            color: black;
+        }
+
+        .para1 p {
+            color: aqua;
+            background-color: grey;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 20px;
+        }
+
+        .para2 p {
+            color: yellow;
+            background-color: darkgreen;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .para3>p{
+            color: blueviolet;
+            background-color: rgb(102, 59, 52);
+            padding: 20px 30px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        .para4 h1+p{
+            color: aqua;
+            background-color: black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .para5 h2~p{
+            color: burlywood;
+            background-color: rgb(104, 64, 64);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        input:focus{
+            border: 5px solid gold;
+        }
+        .unorder ul li:first-child{
+            color: yellowgreen;
+            background-color: bisque;
+            width: 100px;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 8px;
+        }
+         table {
+        width: 90%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 12px;
+        text-align: center;
+      }
+
+      th {
+        background: #007bff;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background: #f2f2f2;
+        color: #8f0505;
+        border: 2px solid red;
+      }
+      .para6 p::first-letter{
+        font-size: 20px;
+        font-weight: bold;
+        color: #8f0505;
+      }
+      .head1 h1::before{
+        content: "🐈";
+      }
+      .head1 h1::after{
+        content: "😽";
+        padding: 3px;
+        background-color: #8f0505;
+      }
+      div::selection{
+        color: #007bff;
+        background-color: antiquewhite;
+      }
+
+    </style>
+</head>
+
+<body>
+    <!--Create an HTML page with one h1, two paragraphs, and three buttons. Apply CSS using the
+Element Selector.  -->
+    <div>
+        <h1>Helloo</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+            doloremque.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+            doloremque.
+        </p>
+        <button>Submit</button>
+        <button>Click ME!</button>
+        <button>Quote</button>
+    </div>
+    <!-- Create four paragraphs with the same class and style them using the Class Selector. -->
+    <div>
+        <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit culpa,
+            eaque magni reprehenderit expedita doloremque repellat animi optio
+            perferendis corporis?
+        </p>
+        <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit culpa,
+            eaque magni reprehenderit expedita doloremque repellat animi optio
+            perferendis corporis?
+        </p>
+        <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit culpa,
+            eaque magni reprehenderit expedita doloremque repellat animi optio
+            perferendis corporis?
+        </p>
+        <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit culpa,
+            eaque magni reprehenderit expedita doloremque repellat animi optio
+            perferendis corporis?
+        </p>
+    </div>
+
+    <!-- Create a heading and a button with different IDs. Style them using the ID Selector. -->
+    <div>
+        <h2 id="head">This is a Cat🐈</h2>
+        <button id="cat">Show Cat!</button>
+    </div>
+    <!-- Create five headings and style all of them using the Group Selector. -->
+    <div>
+        <h3>HI</h3>
+        <h4>Hello</h4>
+        <h5>Meow</h5>
+        <h6>HAHAHAAHHA</h6>
+    </div>
+
+    <!-- Create three input fields and style only the text input using an Attribute Selector. -->
+    <div>
+        <input type="text" placeholder="Name" />
+        <input type="password" placeholder="password" />
+        <input type="number" placeholder="Number" />
+        <input type="email" placeholder="Email" />
+    </div>
+    <!-- Create three links. Style only the link with target='_blank'. -->
+    <div>
+        <a href="https://www.google.com">Google</a>
+        <br /><br />
+
+        <a href="https://www.github.com" target="_blank" rel="noopener">GitHub</a>
+        <br /><br />
+
+        <a href="https://www.youtube.com">YouTube</a>
+    </div>
+    <!-- Create four images. Style only the image whose alt attribute is 'student'. -->
+    <div>
+        <img src="Stu.jpg" alt="student" />
+        <img src="teacher.jpg" alt="teacher" />
+        <img src="STU2.jpg" alt="student" />
+    </div>
+
+    <!-- Create submit, reset, and button buttons. Style only the submit button. -->
+    <div>
+        <form>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+            <input type="button" value="Click Me" />
+        </form>
+    </div>
+
+    <!-- Create a div containing a paragraph. Style the paragraph using the Descendant Selector. -->
+    <div class="para1">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, eaque!
+            Unde dolore ipsa voluptates sapiente sit. Recusandae, voluptate,
+            molestiae delectus quas voluptatibus vero praesentium sit cupiditate
+            possimus, ex autem aliquam.
+        </p>
+    </div>
+
+    <!-- Create div > section > p and style the paragraph using the Descendant Selector. -->
+    <div>
+        <div class="para2">
+            <section>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                    dolorum provident, veritatis sequi assumenda voluptas quibusdam
+                    ipsam, officia quis debitis facere explicabo atque. Esse suscipit
+                    iure porro assumenda amet nesciunt, optio, minus facilis adipisci
+                    maxime repellat aspernatur dolorum accusamus consequuntur?
+                </p>
+            </section>
+        </div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
+            ipsam.
+        </p>
+    </div>
+
+    <!-- Create a div with a direct child paragraph and another outside paragraph. Style only the direct child
+using the Child Selector. -->
+    <div class="para3">
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium,
+                sequi?
+            </p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In nulla
+            voluptates placeat ipsam! Nemo possimus ipsam laborum velit sunt
+            eligendi?
+        </p>
+    </div>
+
+    <!-- Create an h2 followed by a paragraph. Style the paragraph using the Adjacent Sibling Selector. -->
+     <div class="para4">
+        <h1>HELLOO I AM HIMAS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iure sunt, deserunt, eos dolor voluptates culpa et quae voluptatibus placeat itaque corporis fugiat delectus nulla incidunt sed doloribus error? Ipsa?</p>
+     </div>
+
+     <!-- Create an h2 followed by three paragraphs. Style all paragraphs using the General Sibling Selector. -->
+      <div class="para5">
+        <h2>HELLOO HIII I AM MEOWW>></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, debitis omnis nulla porro autem quos! Nesciunt minima maxime dignissimos ducimus eaque ipsa neque ratione eveniet ea, distinctio voluptas facilis itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, debitis omnis nulla porro autem quos! Nesciunt minima maxime dignissimos ducimus eaque ipsa neque ratione eveniet ea, distinctio voluptas facilis itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, debitis omnis nulla porro autem quos! Nesciunt minima maxime dignissimos ducimus eaque ipsa neque ratione eveniet ea, distinctio voluptas facilis itaque?</p>
+      </div>
+
+      <!-- Style the first child of an unordered list. -->
+       <div class="unorder">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+       </div>
+
+       <!-- Style all even rows in a table. -->
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>Himas</td>
+                    <td>23</td>
+                    <td>CS</td>
+                </tr>
+                <tr>
+                    <td>Natha</td>
+                    <td>23</td>
+                    <td>Science and tehcnology</td>
+                </tr>
+                <tr>
+                    <td>Sinofa</td>
+                    <td>24</td>
+                    <td>CA</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Use ::first-letter on a paragraph. -->
+         <div class="para6">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, perspiciatis?</p>
+         </div>
+
+         <!-- Use ::before to add content before a heading. -->
+          <div class="head1">
+            <h1>This is a Cat.</h1>
+          </div>
+</body>
+
+</html>
