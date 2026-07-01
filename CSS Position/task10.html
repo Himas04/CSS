@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task10</title>
+    <link rel="stylesheet"
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login{
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: aliceblue;
+            box-shadow: 1px 2px 3px;
+        }
+        h2{
+            text-align: center;
+            padding-bottom: 5px;
+            color: brown;
+        }
+        input{
+            padding: 10px;
+            width: 90%;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .password-box{
+            position: relative;
+        }
+        .password-box i{
+              position:absolute;
+    right:13px;
+    top:50%;
+    transform:translateY(-50%);
+    color:gray;
+        }
+        button{
+            width: 60%;
+            margin-left:25% ;
+            border-radius: 10px;
+            padding: 5px;
+        }
+         .password-box i:hover{
+            padding: 5px;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h2>LogIn</h2>
+        <input type="text" placeholder="Enter Name..">
+        <div class="password-box">
+        <input type="password" placeholder="Password">
+        <i class="fa-solid fa-lock"></i>
+    </div>
+        <button>LogIn</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task12</title>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.widget{
+    position: relative;
+    width: 320px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.settings{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: gray;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.settings:hover{
+    color: #007bff;
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+.widget h2{
+    margin-bottom: 15px;
+}
+
+.widget p{
+    margin: 8px 0;
+}
+</style>
+</head>
+<body>
+
+<div class="widget">
+    <i class="fa-solid fa-gear settings"></i>
+
+    <h2>Dashboard</h2>
+
+    <p>👤 Users: 250</p>
+    <p>📦 Orders: 120</p>
+    <p>💰 Revenue: 5,000Rs</p>
+</div>
+
+</body>
+</html>

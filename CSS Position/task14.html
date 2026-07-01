@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificate Preview</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.certificate{
+    position: relative;
+    width: 700px;
+    height: 450px;
+    background: rgba(240, 239, 152, 0.882);
+    border: 5px solid #d4af37;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+.cert-no{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkred;
+}
+
+
+.signature{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+}
+
+.signature img{
+    width: 120px;
+}
+
+.signature p{
+    border-top: 1px solid black;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+h1{
+    margin-top: 40px;
+    color: #003366;
+}
+
+h2{
+    margin: 20px 0;
+    color: red;
+}
+
+p{
+    font-size: 18px;
+    color: #003366;
+}
+</style>
+</head>
+<body>
+
+<div class="certificate">
+
+    <img src="NSBM_Green_University_seal.png" class="logo" alt="Logo">
+
+    <div class="cert-no">
+        Certificate No: 2026-001
+    </div>
+
+    <h1>Certificate of Achievement</h1>
+
+    <p>This certificate is proudly presented to</p>
+
+    <h2>Himas Mohamed</h2>
+
+    <p>For successfully completing the Web Development Course.</p>
+
+    <div class="signature">
+        
+        <p><i>Himas</i></p>
+    </div>
+
+</div>
+
+</body>
+</html>

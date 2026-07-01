@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6</title>
+    <style>
+        .card{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: 25%;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: thistle;
+        }
+        .badge{
+            position: absolute;
+            background-color: brown;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 1px 0 10px black;
+            top: 0;
+            left: 0;
+            animation: pulse 2s  infinite;
+        }
+        @keyframes pulse{
+            0%{
+                transform: scaleX(1);
+            }
+            50%{
+                transform: scaleX(1.1);
+            }
+            100%{
+                transform: scaleX(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="badge">20%</div>
+    </div>
+</body>
+</html>

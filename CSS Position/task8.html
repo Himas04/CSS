@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task8</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f2f2f2;
+      }
+
+      .notification {
+        position: relative;
+        display: inline-block;
+      }
+
+      .notification i {
+        font-size: 60px;
+        color: #333;
+      }
+
+      .badge {
+        position: absolute;
+        top: -8px;
+        right: -10px;
+        width: 25px;
+        height: 25px;
+        background: red;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      /* This IS FOR MY KNOWLADGE */
+      /* .notification:hover i {
+        animation: ring 0.6s ease-in-out;
+      }
+
+      @keyframes ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        15% {
+          transform: rotate(20deg);
+        }
+        30% {
+          transform: rotate(-20deg);
+        }
+        45% {
+          transform: rotate(15deg);
+        }
+        60% {
+          transform: rotate(-15deg);
+        }
+        75% {
+          transform: rotate(10deg);
+        }
+        90% {
+          transform: rotate(-10deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="notification">
+      <i class="fa-solid fa-bell"></i>
+      <span class="badge">5</span>
+    </div>
+  </body>
+</html>
