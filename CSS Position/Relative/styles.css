@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Noto+Sans+JP:wght@100..900&family=Yuyu&display=swap');
+body{
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: antiquewhite;
+}
+.box{
+    position: relative;
+    background-color: aliceblue;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 3px 10px;
+    border-radius: 5px;
+
+    /* Move a relative box 30px down and 10px left. */
+    top: 30px;
+    left: 10px;
+}
+button{
+    position: relative;
+    top: 20px;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: bisque;
+    padding: 10px;
+}
+button:hover::after{
+    content: "🐈";
+    background-color: black;
+    border-radius: 5px;
+    padding: 2px;
+}
+.card {
+    width: 300px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.label {
+    position: relative;
+    top: -15px;          
+    left: 10px;          
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.boxx {
+    width: 200px;
+    height: 120px;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box1 {
+    position: relative;
+    background-color: royalblue;
+    border-radius: 10px;
+}
+
+.box2 {
+    position: relative;
+    background-color: tomato;
+    top: -60px;   
+    left: 60px;   
+    border-radius: 10px;
+}
+.head{
+    position:relative;
+    top:10px;
+    left: 30px;
+}
+nav{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.tooltip .tooltiptext {
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+}
