@@ -1,0 +1,325 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    padding:40px;
+}
+
+hr{
+    margin:40px 0;
+    border:0;
+    border-top:2px dashed #bbb;
+}
+
+.container{
+    position:relative;
+    width:500px;
+    height:220px;
+    background:linear-gradient(135deg,#6dd5ed,#2193b0);
+    border-radius:15px;
+    margin:auto;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.box1{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#ff4757;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.box2{
+    position:absolute;
+    bottom:15px;
+    right:15px;
+    background:white;
+    color:#2193b0;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+}
+.card{
+    position:relative;
+    width:320px;
+    margin:auto;
+    padding:25px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#ff3f34;
+    color:white;
+    padding:6px 15px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.card button{
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#0b5ed7;
+}
+
+.modal{
+    position:relative;
+    width:400px;
+    margin:auto;
+    padding:30px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.close{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:28px;
+    color:red;
+    cursor:pointer;
+}
+
+
+.image-card{
+    position:relative;
+    width:320px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.image-card img{
+    width:100%;
+    display:block;
+}
+
+.price{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#ff3f34;
+    color:white;
+    padding:8px 15px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.btn{
+    padding:12px 30px;
+    background:#198754;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.dropdown-content{
+    position:absolute;
+    top:110%;
+    left:0;
+    display:none;
+    min-width:180px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.dropdown-content a{
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    color:#333;
+}
+
+.dropdown-content a:hover{
+    background:#f1f1f1;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.tooltip{
+    position:relative;
+    display:inline-block;
+    padding:12px 20px;
+    background:#222;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.tooltip-text{
+    position:absolute;
+    bottom:130%;
+    left:50%;
+    transform:translateX(-50%);
+    background:black;
+    color:white;
+    padding:8px 15px;
+    border-radius:6px;
+    display:none;
+    white-space:nowrap;
+}
+
+.tooltip:hover .tooltip-text{
+    display:block;
+}
+
+
+.notify{
+    position:relative;
+    display:inline-block;
+    font-size:60px;
+    color:#444;
+}
+
+.count{
+    position:absolute;
+    top:-8px;
+    right:-8px;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    background:red;
+    color:white;
+    text-align:center;
+    line-height:24px;
+    font-size:12px;
+}
+
+
+.icon-box{
+    position:relative;
+    width:300px;
+    height:150px;
+    margin:auto;
+    border-radius:12px;
+    background:white;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.home{
+    position:absolute;
+    top:15px;
+    left:15px;
+}
+
+.user{
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+
+.setting{
+    position:absolute;
+    bottom:15px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.icon-box i{
+    font-size:28px;
+    color:#0d6efd;
+}
+
+
+.float-container{
+    position:relative;
+    width:400px;
+    height:200px;
+    margin:auto;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.float-btn{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    background:#0d6efd;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.float-btn:hover{
+    background:#0b5ed7;
+}
+
+
+.login-card{
+    position:relative;
+    width:350px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.corner{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#ff9800;
+    color:white;
+    padding:6px 15px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.login-card input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.login-card button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#0d6efd;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
