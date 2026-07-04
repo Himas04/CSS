@@ -323,3 +323,85 @@ hr{
     border-radius:8px;
     cursor:pointer;
 }
+.parent{
+    position: relative;
+    width: 400px;
+    height: 250px;
+    background: #4A90E2;
+    border-radius: 12px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.child{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 60px;
+    background: #FF6B6B;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.profile-card{
+    position: relative;
+    border-radius: 10px;
+    background-color: #fcfdff;
+    width: 300px;
+    box-shadow: 2px 3px 12px black;
+    padding: 20px;
+   
+}
+.profile-card img{
+    width: 100%;
+}
+.profile-card .badge1{
+    position: absolute;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    border-radius: 25%;
+}
+.tooltip-box{
+      position:relative;
+    display:inline-block;
+    padding:12px 20px;
+    background:#222;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+.tooltip-box .btn{
+    padding: 10px;
+    
+}
+.tooltip-box .tooltip{
+    display: none;
+    top: 120%;
+    right: 50%;
+    transform:translateX(50%);
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    margin: 5px;
+    padding:8px 15px;
+    border-radius:6px;
+    display:none;
+    white-space:nowrap;
+}
+.tooltip-box:hover .tooltip{
+    display: block;
+}
