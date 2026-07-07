@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: aqua;
+            padding: 15px;
+        }
+        nav h2{
+            float: left;
+        }
+        nav a{
+            float: right;
+            margin: 1%;
+        }
+        .clear{
+            clear: both;
+        }
+             nav::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+            footer {
+            clear: both;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <h2>Meowww</h2>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Login</a>
+    </nav>
+    <div class="clear"></div>
+
+    <footer>
+        <h2>This is Fooetr</h2>
+    </footer>
+  </body>
+</html>
