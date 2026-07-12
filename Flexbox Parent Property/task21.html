@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Parent Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100px;
+            border-radius: 50%;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px   ;
+            height: 100vh;
+            background-color: antiquewhite;
+            margin-top: 5%;
+            padding: 10px;
+
+        }
+        .container .profile-card{
+            background-color: burlywood;
+            padding: 10px;
+            border-radius: 5px;
+            filter: drop-shadow(10px 10px 10px);
+            transition: 0.3s ease-in-out;
+        }
+        .container .profile-card:hover{
+            padding: 20px;
+            transform: rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <h2>Product</h2>
+        <img src="batman-sign-black-background-dc-superheroes-amoled-5k-8k-10k-3840x2160-4409.jpg" alt="profile">
+        <p>KeyBoard</p>
+        <p>1900Rs</p>
+    </div>
+        <div class="profile-card">
+            <h2>Product</h2>
+        <img src="batman-sign-black-background-dc-superheroes-amoled-5k-8k-10k-3840x2160-4409.jpg" alt="profile">
+        <p>KeyBoard</p>
+        <p>1900Rs</p>
+    </div>
+        <div class="profile-card">
+            <h2>Product</h2>
+        <img src="batman-sign-black-background-dc-superheroes-amoled-5k-8k-10k-3840x2160-4409.jpg" alt="profile">
+        <p>KeyBoard</p>
+        <p>1900Rs</p>
+    </div>
+        <div class="profile-card">
+            <h2>Product</h2>
+        <img src="batman-sign-black-background-dc-superheroes-amoled-5k-8k-10k-3840x2160-4409.jpg" alt="profile">
+        <p>KeyBoard</p>
+        <p>1900Rs</p>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Parent Property</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 10px;
+            margin: 2%;
+            background-color: yellow;
+            border-radius: 10px;
+           box-shadow: 2px 3px 10px rgba(0, 0, 100, 0.888);
+        }
+        .container .box{
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            border-radius: 25%;
+            box-shadow: 2px 3px 17px rgba(103, 152, 18, 0.9);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
