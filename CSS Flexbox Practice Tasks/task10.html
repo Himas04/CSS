@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Container Basics</title>
+    <style>
+      .navbar {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: antiquewhite;
+        border-radius: 10px;
+      }
+      .navbar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .navbar .nav a {
+        text-decoration: none;
+        color: black;
+        font-style: oblique;
+      }
+      .nav {
+        display: flex;
+        gap: 20px;
+      }
+      .dropdown {
+        position: relative;
+        display: block;
+      }
+      .dropdownContent {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        border-radius: 10px;
+        box-shadow: 4px 5px 10px;
+        padding-top: 5px;
+        margin-top: 5px;
+      }
+      .dropdownContent a {
+        display: none;
+        padding: 10px;
+       
+      }
+      .dropdown:hover .dropdownContent a {
+        display: block;
+       
+      }
+      #card {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">
+        <img
+          src="batman-sign-black-background-dc-superheroes-amoled-5k-8k-10k-3840x2160-4409.jpg"
+          alt=""
+      /></a>
+
+      <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+
+        <div class="dropdown">
+          <a href="#card">Menu</a>
+
+          <div class="dropdownContent">
+            <a href="#">Vanilla</a>
+            <a href="#">Butterscotch</a>
+            <a href="#">Chocolate</a>
+            <a href="#">BlueBerry</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

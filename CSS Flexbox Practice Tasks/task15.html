@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flex Directions</title>
+
+<style>
+    .layout {
+        display: flex;
+        border: 2px solid black;
+        padding: 10px;
+        margin: 20px;
+        gap: 10px;
+        height: 200px;
+    }
+
+    .box {
+        width: 70px;
+        height: 70px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box1 { background: red; }
+    .box2 { background: blue; }
+    .box3 { background: green; }
+    .box4 { background: orange; }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .column-reverse {
+        flex-direction: column-reverse;
+    }
+</style>
+</head>
+<body>
+
+<h2>1. Row</h2>
+<div class="layout row">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+</div>
+
+<h2>2. Row Reverse</h2>
+<div class="layout row-reverse">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+</div>
+
+<h2>3. Column</h2>
+<div class="layout column">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+</div>
+
+<h2>4. Column Reverse</h2>
+<div class="layout column-reverse">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+</div>
+
+</body>
+</html>
