@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 100px 150px 200px 100px   ;
+            background-color: aqua;
+            gap: 20px   ;
+            grid-template-areas: 
+            "header header header header"
+            "smallbox1 smallbox2 smallbox3 sidebar"
+             "maincontent maincontent maincontent sidebar"
+             "footer footer footer footer";
+        }
+        .container div{
+            background-color: tomato;
+           display: grid;
+           place-content: center;
+           font-weight: bold;
+           font-size: large;
+           border-radius: 10px;
+           
+        }
+        .Header{
+            grid-area: header;
+        }
+        .smallbox1{
+            grid-area: smallbox1;
+        }
+        .smallbox2{
+            grid-area: smallbox2;
+        }
+        .smallbox3{
+            grid-area: smallbox3;
+        }
+        .sidebar{
+    grid-area: sidebar;
+}
+
+.maincontent{
+    grid-area: maincontent;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="Header">Header</div>
+      <div class="smallbox1">Small Box</div>
+      <div class="smallbox2">Small Box</div>
+      <div class="smallbox3">Small Box</div>
+      <div class="sidebar">SideBar</div>
+      <div class="maincontent">Main Content</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
